@@ -23,5 +23,6 @@ jobs:
       with:
         server: www.mkwk019.cba.pl
         username: snorakx
+        local-dir: ./build/
         server-dir: /react-template.j.pl/
         password: ${{ secrets.password }}
