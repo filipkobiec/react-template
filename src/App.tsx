@@ -2,7 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+function getApiData(): void {
+  fetch('http://react-template.j.pl/api/wp-json/wp/v2/products')
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+}
+
 function App() {
+  getApiData();
   return (
     <div className="App">
       <header className="App-header">
